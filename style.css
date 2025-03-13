@@ -1,0 +1,133 @@
+*{
+    left: 0;
+    top: 0;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    font-family: 'Cascadia Code';
+}
+
+.flex{
+    display: flex;
+}
+.flex__row{
+    display: flex;
+    flex-direction: row;
+}
+.flex__column{
+    display: flex;
+    flex-direction: column;
+}
+.center{
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+
+.navbar__container{
+    width: 100%;
+    height: auto;
+    padding: 1rem 0 1rem 2rem;
+    background-color: rgb(93, 135, 54);
+    color: rgb(244, 255, 195);
+    position: fixed;
+}
+
+
+
+.split__container{
+    margin: 6rem 3rem 0 3rem;
+}
+
+.createlist__container{
+    justify-content: center;
+    align-items: center;
+}
+.filter__container{
+    margin: 0 0 0 1rem;
+    padding: 0 0 0 0;
+}
+.list__container{
+    margin: 0 0 0 1rem;
+}
+.list__container h4{
+    font-size: 20px;
+}
+.list__container__list__tugas{
+    margin: 1.5rem 0.4rem 1.5rem 2rem;
+    padding: 0.5rem 0.5rem 0.5rem 0.5rem;
+    width: 50vw;
+    border-radius: 5px;
+    box-shadow: 0 0 0.5rem 0.1rem gray;
+}
+.left__container{
+    width: 100%;
+    height: auto;
+    padding: 0rem 0 1rem 1rem;
+}
+.right__container{
+    width: 100%;
+    height: auto;
+    padding: 0rem 1rem 0rem 0;
+    align-items: end;
+}
+
+.button__done,
+.button__edit,
+.button__delete{
+    width: 4.5rem;
+    height: 4.5rem;
+
+    padding: 0.1rem;
+    resize: none;
+
+    border: none;
+    border-radius: 0.3rem;
+
+    background-color: rgb(128, 157, 60);
+    color: rgb(244, 255, 195);
+
+    font-size: 15px;
+
+    cursor: pointer;
+}
+.button__add{
+    padding: 0.4rem;
+    resize: none;
+    
+    border: none;
+    border-radius: 0.3rem;
+    
+    background-color: rgb(128, 157, 60);
+    color: rgb(244, 255, 195);
+    
+    font-size: 15px;
+    
+    cursor: pointer;
+}
+.button__add:hover{
+    background-color: rgb(93, 135, 54);
+}
+input,
+textarea{
+    width: 40vw;
+    height: auto;
+    padding: 0.3rem;
+    margin: 0 0 1rem;
+    
+    border-radius: 0.2rem;
+    border: 1px solid gray;
+
+    font-size: 15px;
+    resize: none;
+}
+option,
+select{
+    font-size: 15px;
+    margin: 0 0 0 0.5rem;
+}
+p{
+    font-size: 13px;
+}

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Todo List</title>
+
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <div class="root" id="root">
+        <section class="navbar" id="navbar">
+            <div class="navbar__container">
+                <h1>Todo lister</h1>
+            </div>
+        </section>
+        <div class="split__container flex__row">
+            <section class="createlist" id="createlist">
+                <div class="createlist__container flex">
+                    <form action="" id="todo-form">
+                        <div>
+                            <h4>Judul</h4>
+                        </div>
+                        <div>
+                            <input type="text" placeholder="Judul Pekerjaan..." id="todo-input" required />
+                            <img src="" alt="">
+                        </div>
+                        <div>
+                            <h4>Deskripsi</h4>
+                        </div>
+                        <div>
+                            <textarea id="todo-desc" placeholder="Deskripsi Pekerjaan..." rows="2" required></textarea>
+                        </div>
+                        <div>
+                            <button type="submit" class="button__add">Tambahkan</button>
+                        </div>
+                    </form>
+                </div>
+            </section>
+
+            <div class="arrange__container flex__column">
+                <section class="filter" id="filter">
+                    <div class="filter__container flex__row">
+                        <h3>Filter:</h3>
+                        <select id="filter-dropdown">
+                            <option value="all">Semua</option>
+                            <option value="completed">Selesai</option>
+                            <option value="incomplete">Tidak Selesai</option>
+                        </select>
+                    </div>
+                </section>
+                <section class="list" id="list">
+                    <div class="list__container">
+                        <ul class="list__container__list" id="todo-list">
+                            <!-- <li class="list__container__list__tugas flex__row">
+                                    <div class="left__container">
+                                        <h4>Lorem.</h4>
+                                        <p>Lorem ipsum dolor sit.</p>
+                                    </div>
+                                    <div class="right__container flex__row center" style="justify-content: end">
+                                        <button onclick="editTodo()" class="button__edit">
+                                            <img src="src/edit.svg" alt="" />
+                                        </button>
+                                        <button onclick="doneTodo()" class="button__done">
+                                            <img src="src/check.svg" alt="" />
+                                        </button>
+                                        <button onclick="deleteTodo()" class="button__delete">
+                                            <img src="src/trash.svg" alt="" />
+                                        </button>
+                                    </div>
+                                </li> -->
+                        </ul>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </div>
+    <!-- SCRIPT -->
+    <script src="index.js"></script>
+</body>
+
+</html>
